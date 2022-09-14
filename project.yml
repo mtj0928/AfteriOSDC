@@ -1,0 +1,19 @@
+name: AfteriOSDC
+packages:
+  SlideKit:
+    url: https://github.com/mtj0928/SlideKit
+    from: 0.0.4
+targets:
+  AfteriOSDC:
+    type: application
+    settings:
+      base:
+        INFOPLIST_FILE: AfteriOSDC/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.github.mtj0928.SlideKit.demo.AfteriOSDC
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+    platform: macOS
+    deploymentTarget: "12.0"
+    sources: [AfteriOSDC]
+    dependencies:
+      - package: SlideKit
